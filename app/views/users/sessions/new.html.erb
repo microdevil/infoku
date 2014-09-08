@@ -1,0 +1,44 @@
+<% content_for :css_plugin do %>
+  <style type="text/css">
+  body{
+    background-color: #525252;
+}
+.centered-form{
+  margin-top: 60px;
+}
+
+.centered-form .panel{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+  </style>
+<% end %>
+<div class="container" style="margin-top:100px;">
+        <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Login</h3>
+            </div>
+            <div class="panel-body">
+              <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), role: "form") do |f| %>
+                <div class="form-group">
+                  <%= f.email_field :email, :autofocus => true, class: "form-control input-sm", placeholder: "Email Address" %>
+                </div>
+                <div class="form-group">
+                  <%= f.password_field :password, class: "form-control input-sm", placeholder: "Password"%>
+                </div>
+                <% if devise_mapping.rememberable? -%>
+                  <div class="form-group">
+                    <%= f.check_box :remember_me %> <%= f.label :remember_me, "Simpan info login saya" %>
+                  </div>
+                <% end -%>
+                <%= f.submit "Login", class: "btn btn-info btn-block" %>
+                <%= render "users/shared/links" %>
+              
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

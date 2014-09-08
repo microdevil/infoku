@@ -1,12 +1,25 @@
 Myapp::Application.routes.draw do
+  devise_for :users, :controllers => { :registrations => "registrations",confirmations: 'confirmations',  }#, skip: :registrations
+  # devise_scope :user do
+  # resource :registration,
+  #   only: [:new, :create, :edit, :update],
+  #   path: 'users',
+  #   path_names: { new: 'sign_up' },
+  #   # controller: 'devise/registrations',
+  #   as: :user_registration do
+  #     get :cancel
+  #   end
+  # end
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'home#index'
+  root to: 'home#index'
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  get 'authenticate/new' => 'authenticate#new'
+  resources :users, only:[:index] do
+  end
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

@@ -32,3 +32,15 @@ Ruby version: <%= RUBY_VERSION %><br>
 
 Rails version: <%= Rails.version %><br>
 
+$(function() {
+  return $("a[data-remote]").on("ajax:success", function(e, data, status, xhr) {
+    $( "a#new-restaurant" ).remove();
+    $( "a#next" ).remove();
+    $( "div#total-search-view" ).remove();
+    $( "#back-top" ).remove();
+    $( "section#restaurant_contents" ).append( "<%= escape_javascript(render 'list/restaurants') %>" );
+    $( "h3#top-total-search-view" ).html( "Menampilkan <strong><%= @sum_page %> dari <%= @size %></strong> lokasi Kuliner <strong><%= @cuisine_keyword unless @cuisine_keyword.nil? %></strong> yang ada di <strong><%= @location_keyword.nil? ? 'Jakarta' : @location_keyword.capitalize %></strong>" );
+    $( "div#sort_panel" ).html("<%= escape_javascript(render '/restaurants/component/sort_index') %>");
+  });
+});
+
