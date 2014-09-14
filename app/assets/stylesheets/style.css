@@ -1601,7 +1601,7 @@ h4.stat-dig {
 	line-height:56px;
 	text-align:center;
 	display:inline-block;
-	content:"\f099";
+	content:'\f099';
 	font-family: 'FontAwesome';
 	font-size:30px;
 
