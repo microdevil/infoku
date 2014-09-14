@@ -316,12 +316,12 @@ ul.options li [class^='icon-'] {
 
 }
 @media (max-width: 767px) {
-.input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+.input-large, .input-xlarge, .input-xxlarge, input[class*='span'], select[class*='span'], textarea[class*='span'], .uneditable-input {
  display: block;
  width: 100%;
  min-height: 30px;
 }
-.input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] {
+.input-prepend input, .input-append input, .input-prepend input[class*='span'], .input-append input[class*='span'] {
  display: inline-block;
  width: auto;
 }
