@@ -724,7 +724,7 @@ ul.layout-list {
 	padding:0 15px;
 	margin:auto;
 }
-[class^="col-"] ul.layout-list {
+[class^='col-'] ul.layout-list {
 	padding:0px;
 }
 @media (min-width: 768px) {
@@ -1629,7 +1629,7 @@ h4.stat-dig {
 .blog-box {
 	margin-bottom:100px;
 }
-[class^="col-"] .blog-box {
+[class^='col-'] .blog-box {
  margin-bottom:40px;
 }
 .blog-box > figure {
