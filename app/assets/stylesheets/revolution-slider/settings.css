@@ -1782,4 +1782,4 @@ zoom: 1;
 .revicon-right-open-2:before { content: '\e82d'; } /* 'î ­' */
 .revicon-equalizer:before { content: '\e83a'; } /* 'î º' */
 .revicon-layers-alt:before { content: '\e804'; } /* 'î "' */
-.revicon-popup:before { content: '\e828'; } /* 'î ¨' */
+.revicon-popup:before { content: "\e828"; } /* 'î ¨' */
