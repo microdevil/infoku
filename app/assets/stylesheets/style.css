@@ -915,7 +915,7 @@ ul.bullet-2 li:before {
 	color:#565656;
 	display:inline-block;
 	text-align:center;
-	font-family: "ico-font";
+	font-family: 'ico-font';
 	content: '9';
 	font-size:0.95em;
 	position:absolute;
@@ -1960,7 +1960,7 @@ ul.filter-tabs li [class^="icon-"] {
 	color:#565656;
 	display:inline-block;
 	text-indent:0px;
-	font-family: "ico-font";
+	font-family: 'ico-font';
 	font-size:24px;
 	transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
