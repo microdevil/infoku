@@ -1246,7 +1246,7 @@ ul.options li [class^='icon-'] {
 	padding-left:70px;
 	margin-bottom:80px;
 }
-.horizontal-icon > [class^="icon"] {
+.horizontal-icon > [class^='icon'] {
  margin-left:-70px;
  float:left;
 }
