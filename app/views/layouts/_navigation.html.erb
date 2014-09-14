@@ -1,0 +1,13 @@
+<ul class="menu">
+    <li class="current-menu-item">
+        <a href="<%= root_path %>" data-dup="Home">Home</a>
+    </li>
+    <% if user_signed_in? %>
+        <li>
+            <%= link_to users_path do %>Usrs<% end %>
+        </li>
+        <li>
+            <%= link_to destroy_user_session_path, method: :delete do %>Logout<% end %>
+        </li>
+    <% end %>
+</ul>

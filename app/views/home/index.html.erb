@@ -32,17 +32,11 @@
 <div class="pageWrapper">
     <article class="logo-bar">
         <div class="container"> 
-            
+            <%= render "layouts/messages" %>
             <!-- Logo -->
             <div class="pull-right"> <span class="nav-button"></span>
                 <nav class="main-nav">
-                    <ul class="menu">
-                        <li class="current-menu-item"><a href="index.html" data-dup="Home">Home</a>
-                            
-                        </li>
-                        <<!-- li><a href="portfolio.html" data-dup="Portfolio">Galery</a>
-                        </li> -->
-                    </ul>
+                    <%= render "layouts/navigation" %>
                 </nav>
             </div>
         </div>
@@ -60,7 +54,11 @@
                         data-speed="500"
                         data-start="1500"
                         data-easing="easeOutExpo">
-                        <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                        <% if user_signed_in? %>
+                            <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                        <% else %>
+                            <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                        <% end %>
                     </div>
                     <div class="caption lfr str"
                         data-x="center"
@@ -70,7 +68,11 @@
                         data-speed="500"
                         data-start="1500"
                         data-easing="easeOutExpo">
-                        <%= link_to "Login", user_session_path,  class: "btn btn-transparent" %>
+                        <% if user_signed_in? %>
+                            <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                        <% else %>
+                            <%= link_to "Login", user_session_path,  class: "btn btn-transparent" %>
+                        <% end %>
                     </div>
                 </li>
                 <!-- <li data-transition="fade" data-slotamount="10" data-masterspeed="1500"> <%#= image_tag 'home.jpg' %> -->
@@ -180,5 +182,6 @@
 </script> 
 
 <!-- <script src="js/script.js"></script> -->
+<%= javascript_include_tag "bootstrap.min" %>
 </body>
 </html>

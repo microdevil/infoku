@@ -21,44 +21,15 @@ class RegistrationsController < Devise::RegistrationsController
       render "edit"
     end
   end
-  def create
-    build_resource(sign_up_params)
-    authenticate_code = true
-    if resource.security_code == "191014280991"
-      resource_saved = resource.save
-    else
-      authenticate_code = false  
-    end
-    
-    yield resource if block_given?
-    if resource_saved
-      if resource.active_for_authentication?
-        set_flash_message :notice, :signed_up if is_flashing_format?
-        sign_up(resource_name, resource)
-        respond_with resource, location: after_sign_up_path_for(resource)
-      else
-        set_flash_message :notice, :"signed_up_but_#{resource.inactive_message}" if is_flashing_format?
-        expire_data_after_sign_in!
-        respond_with resource, location: after_inactive_sign_up_path_for(resource)
-      end
-    else
-      if authenticate_code
-        clean_up_passwords resource
-        @validatable = devise_mapping.validatable?
-        if @validatable
-          @minimum_password_length = resource_class.password_length.min
-        end
-        respond_with resource
-      else
-        render "new"
-      end
-      
-    end
-  end
-
   # def create
   #   build_resource(sign_up_params)
-  #   resource_saved = resource.save
+  #   authenticate_code = true
+  #   if resource.security_code == "191014280991"
+  #     resource_saved = resource.save
+  #   else
+  #     authenticate_code = false  
+  #   end
+    
   #   yield resource if block_given?
   #   if resource_saved
   #     if resource.active_for_authentication?
@@ -71,14 +42,48 @@ class RegistrationsController < Devise::RegistrationsController
   #       respond_with resource, location: after_inactive_sign_up_path_for(resource)
   #     end
   #   else
-  #     clean_up_passwords resource
-  #     @validatable = devise_mapping.validatable?
-  #     if @validatable
-  #       @minimum_password_length = resource_class.password_length.min
+  #     if authenticate_code
+  #       clean_up_passwords resource
+  #       @validatable = devise_mapping.validatable?
+  #       if @validatable
+  #         @minimum_password_length = resource_class.password_length.min
+  #       end
+  #       respond_with resource
+  #     else
+  #       render "new"
   #     end
-  #     respond_with resource
+      
   #   end
   # end
+
+  def create
+    build_resource(sign_up_params)
+    # if resource.security_code == "191014280991"
+    #   authenticate_code = true
+    # else
+    #   authenticate_code = false  
+    # end
+    resource_saved = resource.save
+    yield resource if block_given?
+    if resource_saved
+      if resource.active_for_authentication?
+        set_flash_message :notice, :signed_up if is_flashing_format?
+        sign_up(resource_name, resource)
+        respond_with resource, location: after_sign_up_path_for(resource)
+      else
+        set_flash_message :notice, :"signed_up_but_#{resource.inactive_message}" if is_flashing_format?
+        expire_data_after_sign_in!
+        respond_with resource, location: after_inactive_sign_up_path_for(resource)
+      end
+    else
+      clean_up_passwords resource
+      @validatable = devise_mapping.validatable?
+      if @validatable
+        @minimum_password_length = resource_class.password_length.min
+      end
+      respond_with resource
+    end
+  end
 
   private
 
