@@ -77,7 +77,6 @@ Myapp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-  config.log_formatter = ::Logger::Formatter.new
   config.action_mailer.default_url_options = { host: 'alphabob.info' }
   # config.action_mailer.perform_deliveries = true
   # config.action_mailer.raise_delivery_errors = true
@@ -89,6 +88,5 @@ Myapp::Application.configure do
     domain:               'gmail.com',
     user_name:            'info.alphabob',
     password:             'Info.alphabob22',
-    authentication:       'plain',
-    enable_starttls_auto: true  }
+    authentication:       'plain'}
 end
