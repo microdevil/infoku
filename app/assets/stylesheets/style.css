@@ -1970,7 +1970,7 @@ ul.filter-tabs li [class^="icon-"] {
 	color:#ffffff;
 }
 .main-slider .tp-leftarrow:before {
-	content: "\"";
+	content: '\"';
 }
 .main-slider .tp-rightarrow:before {
 	content: '9';

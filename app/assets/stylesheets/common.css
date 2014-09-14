@@ -2053,7 +2053,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	-webkit-transition:all 0.4s ease;
 }
 .caro-prev:before {
-	content: "\"";
+	content: '\"';
 }
 .caro-next:before {
 	content: '9';
