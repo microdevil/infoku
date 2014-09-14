@@ -211,11 +211,11 @@ ol.bullet-3 li:before, ul.bullet-3 li:before {
 .pricing-table .table-heading span {
  float:none;
 }
-.btn, button, input[type="submit"], input[type="reset"], input[type="button"] {
+.btn, button, input[type='submit'], input[type='reset'], input[type='button'] {
  padding:5px 20px;
  font-size:11px;
 }
-input.btn[type="submit"], input.btn[type="reset"], input.btn[type="button"], button, input[type="submit"], input[type="reset"], input[type="button"] {
+input.btn[type='submit'], input.btn[type='reset'], input.btn[type='button'], button, input[type='submit'], input[type='reset'], input[type='button'] {
  padding:5px 12px;
 }
 .widget_tag_cloud a {
