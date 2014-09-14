@@ -1173,7 +1173,7 @@ footer .widget_tag_cloud a {
 	position:relative;
 	display:block;
 }
-.widget_search input[type="text"] {
+.widget_search input[type='text'] {
 	width:100%;
 	min-height:40px;
 	background-color:transparent;
