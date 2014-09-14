@@ -1284,7 +1284,7 @@ ul.options li [class^='icon-'] {
 	-moz-transform: translateY(100%);
 	transform: translateY(100%);
 }
-.feature-box .feature-up [class^="icon"], .feature-box .feature-up p, .feature-box .feature-down p, .feature-box .feature-down h4 {
+.feature-box .feature-up [class^='icon'], .feature-box .feature-up p, .feature-box .feature-down p, .feature-box .feature-down h4 {
  margin:0px;
 }
 .feature-box .feature-down {
