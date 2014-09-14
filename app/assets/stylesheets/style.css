@@ -892,7 +892,7 @@ ul.bullet-1 li:before {
 	display:inline-block;
 	text-align:center;
 	border:2px solid #565656;
-	content: "";
+	content: '';
 	background-image:url(../images/sprites.png);
 	background-repeat:no-repeat;
 	background-position:-77px -152px;
