@@ -290,7 +290,7 @@ header h1, header h2, header h3, header h4, .blog-box p.meta, .meta, header {
  line-height:40px;
  top:-55px;
 }
-ul.options li [class^="icon-"] {
+ul.options li [class^='icon-'] {
  font-size:14px;
  top:2px;
 }
@@ -451,7 +451,7 @@ ul.options li {
 	padding:5px 15px;
 	margin-top:0px;
 }
-.author-box .options [class^="icon-"] {
+.author-box .options [class^='icon-'] {
 	min-width:78px;
 	padding:8px 12px;
 	margin-top:10px;
@@ -518,7 +518,7 @@ ul.layout-list .portfolio-detail {
 .author-box .options .btn {
 	min-width:100px;
 }
-.author-box .options [class^="icon-"] {
+.author-box .options [class^='icon-'] {
 	min-width:45px;
 }
 
