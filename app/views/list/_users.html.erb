@@ -24,7 +24,8 @@
                 <% @users.each do  |user| %>
                     <li class="list-group-item">
                         <div class="col-xs-12 col-sm-3">
-                            <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" />
+                            <%= image_tag "logo_opppmia.jpg" %>
+                            <!-- <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" /> -->
                         </div>
                         <div class="col-xs-12 col-sm-9">
                             <span class="name"><%= user.name %></span><br/>

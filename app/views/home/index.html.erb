@@ -55,7 +55,7 @@
                         data-start="1500"
                         data-easing="easeOutExpo">
                         <% if user_signed_in? %>
-                            <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                            <%= link_to "Edit Profile", edit_user_registration_path,  class: "btn btn-transparent" %>
                         <% else %>
                             <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
                         <% end %>
@@ -69,7 +69,7 @@
                         data-start="1500"
                         data-easing="easeOutExpo">
                         <% if user_signed_in? %>
-                            <%= link_to "Register", new_user_registration_path,  class: "btn btn-transparent" %>
+                            <%= link_to destroy_user_session_path, method: :delete do %>Logout<% end %>
                         <% else %>
                             <%= link_to "Login", user_session_path,  class: "btn btn-transparent" %>
                         <% end %>
@@ -102,8 +102,14 @@
     </article>
     <article class="focus-area bg-theme">
         <div class="container" id="main-form">
-            <p class="pull-left">Sudah terdaftar menjadi alumni Assalaam?</p>
-            <a href="<%= user_session_path %>" class="btn btn-transparent pull-right">Silahkan Login</a> 
+            <% if user_signed_in? %>
+                <p class="pull-left">Terima kasih atas kunjungannya.....</p>
+                <%= link_to destroy_user_session_path,class: "btn btn-transparent pull-right",  method: :delete do %>Logout<% end %>
+            <% else %>
+                <p class="pull-left">Sudah terdaftar menjadi alumni Assalaam?</p>
+                <a href="<%= user_session_path %>" class="btn btn-transparent pull-right">Silahkan Login</a>
+            <% end %>
+            
         </div>
     </article>
     <footer>
