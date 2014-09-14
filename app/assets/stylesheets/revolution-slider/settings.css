@@ -1709,7 +1709,7 @@ zoom: 1;
 }
 */
 
- [class^="revicon-"]:before, [class*=' revicon-']:before {
+ [class^='revicon-']:before, [class*=' revicon-']:before {
   font-family: 'revicons';
   font-style: normal;
   font-weight: normal;
