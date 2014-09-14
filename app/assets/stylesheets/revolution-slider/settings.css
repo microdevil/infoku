@@ -173,7 +173,7 @@ text-shadow: none;
 font-size: 60px;
 line-height: 60px;
 font-weight: 300;
-font-family: "Open Sans", sans-serif;
+font-family: 'Open Sans', sans-serif;
 background-color: rgba(0, 0, 0, 0);
 text-decoration: none;
 text-transform: uppercase;
@@ -189,7 +189,7 @@ text-shadow: none;
 font-size: 34px;
 line-height: 34px;
 font-weight: 300;
-font-family: "Open Sans", sans-serif;
+font-family: 'Open Sans', sans-serif;
 background-color: rgba(0, 0, 0, 0);
 text-decoration: none;
 text-transform: uppercase;
@@ -1682,7 +1682,7 @@ padding: 0px;
 
 .tp-caption img {
 background: transparent;
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+-ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)';
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 zoom: 1;
 }
