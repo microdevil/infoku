@@ -73729,3 +73729,770 @@ ActionController::RoutingError (No route matches [GET] "/images/sprites.png"):
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 18:41:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered layouts/_messages.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (9.8ms)
+  Rendered home/index.html.erb within layouts/application (140.3ms)
+Completed 200 OK in 1162ms (Views: 1103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:06 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:07 +0700
+
+
+Started GET "/assets/home.jpg" for 127.0.0.1 at 2014-09-14 18:41:07 +0700
+
+
+Started GET "/assets/revolution-slider/timer.png" for 127.0.0.1 at 2014-09-14 18:41:07 +0700
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  [1m[35mUser Load (19.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered list/_users.html.erb (41.0ms)
+  Rendered users/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 78ms (Views: 55.6ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:10 +0700
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered list/_users.html.erb (1.8ms)
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:31 +0700
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-09-14 18:41:43 +0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered list/_users.html.erb (2.2ms)
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:43 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:43 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:41:44 +0700
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered list/_users.html.erb (1.8ms)
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:42:07 +0700
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE (confirmed_at != NULL)[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE (confirmed_at == NULL )
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ( confirmed_at == NULL )[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ( confirmed_at == NIL )
+SQLite3::SQLException: no such column: NIL: SELECT "users".* FROM "users"  WHERE ( confirmed_at == NIL )
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ( confirmed_at == NILL )[0m
+SQLite3::SQLException: no such column: NILL: SELECT "users".* FROM "users"  WHERE ( confirmed_at == NILL )
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ( confirmed_at = L )
+SQLite3::SQLException: no such column: L: SELECT "users".* FROM "users"  WHERE ( confirmed_at = L )
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ( confirmed_at = NULL )[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ( confirmed_at != NULL )
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmed_at" IS NULL
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (confirmed_at: nil)[0m
+SQLite3::SQLException: unrecognized token: ":": SELECT "users".* FROM "users"  WHERE (confirmed_at: nil)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (confirmed_at = nil)
+SQLite3::SQLException: no such column: nil: SELECT "users".* FROM "users"  WHERE (confirmed_at = nil)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (confirmed_at = NULL)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (confirmed_at IS NULL)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE (confirmed_at IS NOt NULL)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (confirmed_at IS NOT NULL)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (74.6ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["confirmed_at", Sun, 14 Sep 2014 11:54:54 UTC +00:00], ["updated_at", Sun, 14 Sep 2014 11:54:55 UTC +00:00]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE (confirmed_at IS NOT NULL)[0m
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+Processing by UsersController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (confirmed_at IS NOT NULL)
+  Rendered list/_users.html.erb (17.3ms)
+  Rendered users/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 36ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 18:55:46 +0700
