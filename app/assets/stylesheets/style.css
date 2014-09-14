@@ -916,7 +916,7 @@ ul.bullet-2 li:before {
 	display:inline-block;
 	text-align:center;
 	font-family: "ico-font";
-	content: "9";
+	content: '9';
 	font-size:0.95em;
 	position:absolute;
 	left:0px;
@@ -1973,5 +1973,5 @@ ul.filter-tabs li [class^="icon-"] {
 	content: "\"";
 }
 .main-slider .tp-rightarrow:before {
-	content: "9";
+	content: '9';
 }

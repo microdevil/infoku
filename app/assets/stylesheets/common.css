@@ -2056,7 +2056,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 	content: "\"";
 }
 .caro-next:before {
-	content: "9";
+	content: '9';
 }
 .caro-prev:hover:before {
 	transform:translateX(-2px);
