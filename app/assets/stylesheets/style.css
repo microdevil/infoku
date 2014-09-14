@@ -1602,7 +1602,7 @@ h4.stat-dig {
 	text-align:center;
 	display:inline-block;
 	content:"\f099";
-	font-family: "FontAwesome";
+	font-family: 'FontAwesome';
 	font-size:30px;
 
 	position:absolute;
