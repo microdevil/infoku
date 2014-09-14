@@ -76771,3 +76771,128 @@ Started GET "/assets/home.jpg" for 127.0.0.1 at 2014-09-14 19:58:09 +0700
 
 
 Started GET "/assets/revolution-slider/timer.png" for 127.0.0.1 at 2014-09-14 19:58:09 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+Processing by HomeController#index as HTML
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/animate.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/authenticate.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/color-red.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/color-green.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/color.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/fonts/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/fonts/fonts/typicons.min.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/fonts/ico-font.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/fonts/typicons.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/prettyPhoto.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/responsive.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/revolution-slider/settings.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/authenticate.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery-1.10.2.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery-ui-1.10.3.custom.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.appear.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.carouFredSel-6.2.1-packed.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.knob.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.mixitup.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.prettyPhoto.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.roundabout-shapes.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.roundabout.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/jquery.themepunch.revolution.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/masonry.pkgd.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/script.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/home.jpg" for 127.0.0.1 at 2014-09-14 20:06:46 +0700
+
+
+Started GET "/assets/revolution-slider/timer.png" for 127.0.0.1 at 2014-09-14 20:06:46 +0700

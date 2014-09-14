@@ -1184,7 +1184,7 @@ footer .widget_tag_cloud a {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
-.widget_search input[type="submit"] {
+.widget_search input[type='submit'] {
 	width:24px;
 	height:24px;
 	background:url(../images/sprites.png) -98px -67px no-repeat;
@@ -1761,7 +1761,7 @@ ul.user-comments ul .comment-box figure, ul.user-comments ul .comment-box figure
 	margin-bottom:50px;
 	min-height:230px;
 }
-.reply-form input[type="submit"] {
+.reply-form input[type='submit'] {
 	float:right;
 }
 .purple-color {
