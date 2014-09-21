@@ -4219,3 +4219,722 @@ I, [2014-06-11T04:46:31.900315 #875]  INFO -- : Started GET "/" for 119.63.193.1
 I, [2014-06-11T04:46:32.027466 #875]  INFO -- : Processing by HomeController#index as HTML
 I, [2014-06-11T04:46:32.040030 #875]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.9ms)
 I, [2014-06-11T04:46:32.042079 #875]  INFO -- : Completed 200 OK in 14ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+I, [2014-09-15T04:23:21.633673 #5727]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-15 04:23:21 +0700
+I, [2014-09-15T04:23:21.706921 #5727]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-15T04:23:21.805641 #5727]  INFO -- :   Rendered layouts/_messages.html.erb (0.6ms)
+I, [2014-09-15T04:23:21.832457 #5727]  INFO -- :   Rendered layouts/_navigation.html.erb (13.5ms)
+I, [2014-09-15T04:23:23.066514 #5727]  INFO -- :   Rendered home/index.html.erb within layouts/application (1288.2ms)
+I, [2014-09-15T04:23:23.069731 #5727]  INFO -- : Completed 200 OK in 1363ms (Views: 1345.2ms | ActiveRecord: 0.0ms)
+I, [2014-09-15T04:23:23.096020 #5727]  INFO -- : Started GET "/assets/application-bb7646d9ffeacfd960a576001feb8b35.css" for 127.0.0.1 at 2014-09-15 04:23:23 +0700
+I, [2014-09-15T04:23:39.715056 #5727]  INFO -- : Started GET "/assets/application-211aadc4651cdb0aa1f5eea75a0d2df3.js" for 127.0.0.1 at 2014-09-15 04:23:39 +0700
+I, [2014-09-15T04:23:49.171181 #5727]  INFO -- : Started GET "/assets/bootstrap.min-34c4dade2a5979f6fae6b58e31b1cafb.js" for 127.0.0.1 at 2014-09-15 04:23:49 +0700
+I, [2014-09-15T04:23:49.275219 #5727]  INFO -- : Started GET "/assets/home-4210a3183e2b2f22fb511a2a637ef5aa.jpg" for 127.0.0.1 at 2014-09-15 04:23:49 +0700
+I, [2014-09-15T04:23:49.469422 #5727]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-15 04:23:49 +0700
+F, [2014-09-15T04:23:49.517561 #5727] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-15T04:23:53.274146 #5727]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-15 04:23:53 +0700
+I, [2014-09-15T04:23:53.276906 #5727]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-15T04:23:53.377634 #5727]  INFO -- : Completed 500 Internal Server Error in 100ms
+F, [2014-09-15T04:23:53.384097 #5727] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:512:in `table_structure'
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:399:in `columns'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:114:in `block in prepare_default_proc'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `yield'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:208:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:249:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/locking/optimistic.rb:169:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/core.rb:171:in `initialize'
+  devise (3.2.4) lib/devise/models/confirmable.rb:47:in `initialize'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  devise (3.2.4) lib/devise/models/registerable.rb:20:in `new_with_session'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:95:in `build_resource'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:7:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__2899683381099977744__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3658756228146513028__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-15T04:24:33.961029 #5848]  INFO -- : Migrating to DeviseCreateUsers (20140817133652)
+I, [2014-09-15T04:24:34.032574 #5848]  INFO -- : Migrating to AddConfirmableToDevise (20140820211824)
+I, [2014-09-15T04:24:39.938627 #5727]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-15 04:24:39 +0700
+I, [2014-09-15T04:24:39.942211 #5727]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-15T04:24:39.943655 #5727]  INFO -- : Completed 500 Internal Server Error in 1ms
+F, [2014-09-15T04:24:39.947573 #5727] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:512:in `table_structure'
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:399:in `columns'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:114:in `block in prepare_default_proc'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `yield'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:208:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:249:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/locking/optimistic.rb:169:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/core.rb:171:in `initialize'
+  devise (3.2.4) lib/devise/models/confirmable.rb:47:in `initialize'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  devise (3.2.4) lib/devise/models/registerable.rb:20:in `new_with_session'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:95:in `build_resource'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:7:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__2899683381099977744__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3658756228146513028__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-15T04:24:41.747153 #5727]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-15 04:24:41 +0700
+I, [2014-09-15T04:24:41.748350 #5727]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-15T04:24:41.749739 #5727]  INFO -- : Completed 500 Internal Server Error in 1ms
+F, [2014-09-15T04:24:41.753293 #5727] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:512:in `table_structure'
+  activerecord (4.0.2) lib/active_record/connection_adapters/sqlite3_adapter.rb:399:in `columns'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:114:in `block in prepare_default_proc'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `yield'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:56:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:208:in `columns'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:249:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/locking/optimistic.rb:169:in `column_defaults'
+  activerecord (4.0.2) lib/active_record/core.rb:171:in `initialize'
+  devise (3.2.4) lib/devise/models/confirmable.rb:47:in `initialize'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  activerecord (4.0.2) lib/active_record/inheritance.rb:27:in `new'
+  devise (3.2.4) lib/devise/models/registerable.rb:20:in `new_with_session'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:95:in `build_resource'
+  devise (3.2.4) app/controllers/devise/registrations_controller.rb:7:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__2899683381099977744__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3658756228146513028__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-15T04:24:56.865484 #5853]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-15 04:24:56 +0700
+I, [2014-09-15T04:24:56.876315 #5853]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-15T04:24:57.136783 #5853]  INFO -- :   Rendered users/shared/_links.erb (2.5ms)
+I, [2014-09-15T04:24:57.137760 #5853]  INFO -- :   Rendered users/registrations/new.html.erb within layouts/application (194.0ms)
+I, [2014-09-15T04:24:57.139903 #5853]  INFO -- : Completed 200 OK in 263ms (Views: 231.4ms | ActiveRecord: 1.0ms)
+I, [2014-09-15T04:25:29.280798 #5853]  INFO -- : Started POST "/users" for 127.0.0.1 at 2014-09-15 04:25:29 +0700
+I, [2014-09-15T04:25:29.283685 #5853]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-09-15T04:25:29.304233 #5853]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"9fHbeGFiYfChzUQO/xUrw1IEtHF0ajFi/Wij5py9bMo=", "user"=>{"name"=>"Aji Achmad Mustofa", "phone"=>"085715630303", "address"=>"Jalan Makmur", "current_job"=>"De", "email"=>"aji.achmad@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "security_code"=>"191014280991"}, "commit"=>"Sign up"}
+E, [2014-09-15T04:25:30.027399 #5853] ERROR -- : Binary data inserted for `string` type on column `confirmation_token`
+E, [2014-09-15T04:25:30.027602 #5853] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+I, [2014-09-15T04:25:30.214249 #5853]  INFO -- :   Rendered users/mailer/confirmation_instructions.html.erb (1.5ms)
+I, [2014-09-15T04:25:36.034200 #5853]  INFO -- : 
+Sent mail to aji.achmad@icloud.com (5815.4ms)
+I, [2014-09-15T04:25:36.048615 #5853]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-09-15T04:25:36.048920 #5853]  INFO -- : Completed 302 Found in 6744ms (ActiveRecord: 36.6ms)
+I, [2014-09-15T04:25:36.116201 #5853]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-15 04:25:36 +0700
+I, [2014-09-15T04:25:36.117977 #5853]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-15T04:25:36.155977 #5853]  INFO -- :   Rendered layouts/_messages.html.erb (0.7ms)
+I, [2014-09-15T04:25:36.171247 #5853]  INFO -- :   Rendered layouts/_navigation.html.erb (1.9ms)
+I, [2014-09-15T04:25:36.180501 #5853]  INFO -- :   Rendered home/index.html.erb within layouts/application (45.8ms)
+I, [2014-09-15T04:25:36.181897 #5853]  INFO -- : Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+I, [2014-09-15T04:25:36.338997 #5853]  INFO -- : Started GET "/images/sprites.png" for 127.0.0.1 at 2014-09-15 04:25:36 +0700
+F, [2014-09-15T04:25:36.340575 #5853] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/sprites.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-15T04:25:36.413846 #5853]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-15 04:25:36 +0700
+F, [2014-09-15T04:25:36.421510 #5853] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-19T05:33:34.300446 #3515]  INFO -- : Migrating to DeviseCreateUsers (20140817133652)
+I, [2014-09-19T05:33:34.396953 #3515]  INFO -- : Migrating to AddConfirmableToDevise (20140820211824)
+I, [2014-09-19T05:33:59.443318 #3525]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-19 05:33:59 +0700
+I, [2014-09-19T05:33:59.492889 #3525]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-19T05:33:59.593695 #3525]  INFO -- :   Rendered layouts/_messages.html.erb (0.9ms)
+I, [2014-09-19T05:33:59.615637 #3525]  INFO -- :   Rendered layouts/_navigation.html.erb (9.0ms)
+I, [2014-09-19T05:33:59.703583 #3525]  INFO -- :   Rendered home/index.html.erb within layouts/application (137.6ms)
+I, [2014-09-19T05:33:59.705193 #3525]  INFO -- : Completed 200 OK in 212ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+I, [2014-09-19T05:33:59.719211 #3525]  INFO -- : Started GET "/assets/application-bb7646d9ffeacfd960a576001feb8b35.css" for 127.0.0.1 at 2014-09-19 05:33:59 +0700
+I, [2014-09-19T05:33:59.883147 #3525]  INFO -- : Started GET "/assets/application-211aadc4651cdb0aa1f5eea75a0d2df3.js" for 127.0.0.1 at 2014-09-19 05:33:59 +0700
+I, [2014-09-19T05:34:01.216246 #3525]  INFO -- : Started GET "/assets/bootstrap.min-34c4dade2a5979f6fae6b58e31b1cafb.js" for 127.0.0.1 at 2014-09-19 05:34:01 +0700
+I, [2014-09-19T05:34:01.223502 #3525]  INFO -- : Started GET "/assets/home-4210a3183e2b2f22fb511a2a637ef5aa.jpg" for 127.0.0.1 at 2014-09-19 05:34:01 +0700
+I, [2014-09-19T05:34:01.359665 #3525]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-19 05:34:01 +0700
+F, [2014-09-19T05:34:01.387476 #3525] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-19T05:34:01.498491 #3525]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2014-09-19 05:34:01 +0700
+F, [2014-09-19T05:34:01.499604 #3525] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-19T05:34:04.362572 #3525]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-19 05:34:04 +0700
+I, [2014-09-19T05:34:04.365223 #3525]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-19T05:34:04.639026 #3525]  INFO -- :   Rendered users/shared/_links.erb (2.0ms)
+I, [2014-09-19T05:34:04.639546 #3525]  INFO -- :   Rendered users/registrations/new.html.erb within layouts/application (199.2ms)
+I, [2014-09-19T05:34:04.640274 #3525]  INFO -- : Completed 200 OK in 275ms (Views: 220.8ms | ActiveRecord: 1.0ms)
+I, [2014-09-19T05:34:26.708862 #3525]  INFO -- : Started POST "/users" for 127.0.0.1 at 2014-09-19 05:34:26 +0700
+I, [2014-09-19T05:34:26.712139 #3525]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-09-19T05:34:26.732053 #3525]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"5n2ZJ5QSg1ifQUNzxJ1wzQGdGQuALXA3Ohj15GCyrMQ=", "user"=>{"name"=>"Aji Achmad Mustofa", "phone"=>"085715630303", "address"=>"Jakarta Timur", "current_job"=>"Developer", "email"=>"micro280991@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "security_code"=>"191014280991"}, "commit"=>"Sign up"}
+E, [2014-09-19T05:34:27.386926 #3525] ERROR -- : Binary data inserted for `string` type on column `confirmation_token`
+E, [2014-09-19T05:34:27.387101 #3525] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+I, [2014-09-19T05:34:27.572844 #3525]  INFO -- :   Rendered users/mailer/confirmation_instructions.html.erb (0.9ms)
+I, [2014-09-19T05:34:34.414735 #3525]  INFO -- : 
+Sent mail to micro280991@gmail.com (6838.3ms)
+I, [2014-09-19T05:34:34.430840 #3525]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-09-19T05:34:34.431073 #3525]  INFO -- : Completed 302 Found in 7699ms (ActiveRecord: 90.2ms)
+I, [2014-09-19T05:34:34.436087 #3525]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-19 05:34:34 +0700
+I, [2014-09-19T05:34:34.437900 #3525]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-19T05:34:34.439204 #3525]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
+I, [2014-09-19T05:34:34.439888 #3525]  INFO -- :   Rendered layouts/_navigation.html.erb (0.5ms)
+I, [2014-09-19T05:34:34.440955 #3525]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.0ms)
+I, [2014-09-19T05:34:34.441555 #3525]  INFO -- : Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2014-09-19T05:34:34.578885 #3525]  INFO -- : Started GET "/images/sprites.png" for 127.0.0.1 at 2014-09-19 05:34:34 +0700
+F, [2014-09-19T05:34:34.580864 #3525] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/sprites.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-19T05:34:34.666929 #3525]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-19 05:34:34 +0700
+F, [2014-09-19T05:34:34.673197 #3525] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+D, [2014-09-21T03:18:46.800672 #5772] DEBUG -- :   [1m[36m (4.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2014-09-21T03:18:46.822955 #5772] DEBUG -- :   [1m[35m (4.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2014-09-21T03:18:46.823932 #5772] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-09-21T03:18:46.824111 #5772]  INFO -- : Migrating to DeviseCreateUsers (20140817133652)
+D, [2014-09-21T03:18:46.846185 #5772] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2014-09-21T03:18:46.851850 #5772] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "name" varchar(255), "phone" varchar(255), "current_job" varchar(255), "address" text, "birth_date" datetime, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+D, [2014-09-21T03:18:46.853190 #5772] DEBUG -- :   [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+D, [2014-09-21T03:18:46.854081 #5772] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+D, [2014-09-21T03:18:46.895981 #5772] DEBUG -- :   [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140817133652"]]
+D, [2014-09-21T03:18:46.901778 #5772] DEBUG -- :   [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+I, [2014-09-21T03:18:46.901887 #5772]  INFO -- : Migrating to AddConfirmableToDevise (20140820211824)
+D, [2014-09-21T03:18:46.916321 #5772] DEBUG -- :   [1m[35m (0.2ms)[0m  begin transaction
+D, [2014-09-21T03:18:46.917828 #5772] DEBUG -- :   [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "confirmation_token" varchar(255)[0m
+D, [2014-09-21T03:18:46.918632 #5772] DEBUG -- :   [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "confirmed_at" datetime
+D, [2014-09-21T03:18:46.919565 #5772] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "confirmation_sent_at" datetime[0m
+D, [2014-09-21T03:18:46.920560 #5772] DEBUG -- :   [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "unconfirmed_email" varchar(255)
+D, [2014-09-21T03:18:46.921675 #5772] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_confirmation_token" ON "users" ("confirmation_token")[0m
+D, [2014-09-21T03:18:46.957264 #5772] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  UPDATE "users" SET "confirmed_at" = '2014-09-20 20:18:46.921773'
+D, [2014-09-21T03:18:46.958340 #5772] DEBUG -- :   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140820211824"]]
+D, [2014-09-21T03:18:46.964219 #5772] DEBUG -- :   [1m[35m (5.6ms)[0m  commit transaction
+D, [2014-09-21T03:18:46.999062 #5772] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2014-09-21T03:19:34.022508 #5783]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-21 03:19:34 +0700
+I, [2014-09-21T03:19:34.032714 #5783]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-21T03:19:34.172602 #5783]  INFO -- :   Rendered layouts/_messages.html.erb (0.7ms)
+I, [2014-09-21T03:19:34.223838 #5783]  INFO -- :   Rendered layouts/_navigation.html.erb (8.9ms)
+I, [2014-09-21T03:19:34.335174 #5783]  INFO -- :   Rendered home/index.html.erb within layouts/application (204.4ms)
+I, [2014-09-21T03:19:34.336620 #5783]  INFO -- : Completed 200 OK in 304ms (Views: 288.9ms | ActiveRecord: 0.0ms)
+I, [2014-09-21T03:19:34.356367 #5783]  INFO -- : Started GET "/assets/application-bb7646d9ffeacfd960a576001feb8b35.css" for 127.0.0.1 at 2014-09-21 03:19:34 +0700
+I, [2014-09-21T03:19:34.764007 #5783]  INFO -- : Started GET "/assets/application-211aadc4651cdb0aa1f5eea75a0d2df3.js" for 127.0.0.1 at 2014-09-21 03:19:34 +0700
+I, [2014-09-21T03:19:35.079594 #5783]  INFO -- : Started GET "/assets/bootstrap.min-34c4dade2a5979f6fae6b58e31b1cafb.js" for 127.0.0.1 at 2014-09-21 03:19:35 +0700
+I, [2014-09-21T03:19:35.084214 #5783]  INFO -- : Started GET "/assets/home-4210a3183e2b2f22fb511a2a637ef5aa.jpg" for 127.0.0.1 at 2014-09-21 03:19:35 +0700
+I, [2014-09-21T03:19:35.225117 #5783]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-21 03:19:35 +0700
+F, [2014-09-21T03:19:35.237455 #5783] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-21T03:19:35.322581 #5783]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2014-09-21 03:19:35 +0700
+F, [2014-09-21T03:19:35.323709 #5783] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-21T03:19:35.335112 #5783]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2014-09-21 03:19:35 +0700
+F, [2014-09-21T03:19:35.337020 #5783] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-21T03:19:41.715885 #5783]  INFO -- : Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-21 03:19:41 +0700
+I, [2014-09-21T03:19:41.717989 #5783]  INFO -- : Processing by RegistrationsController#new as HTML
+I, [2014-09-21T03:19:41.943291 #5783]  INFO -- :   Rendered users/shared/_links.erb (1.7ms)
+I, [2014-09-21T03:19:41.943796 #5783]  INFO -- :   Rendered users/registrations/new.html.erb within layouts/application (154.3ms)
+I, [2014-09-21T03:19:41.944508 #5783]  INFO -- : Completed 200 OK in 226ms (Views: 177.5ms | ActiveRecord: 0.8ms)
+I, [2014-09-21T03:20:11.381935 #5783]  INFO -- : Started POST "/users" for 127.0.0.1 at 2014-09-21 03:20:11 +0700
+I, [2014-09-21T03:20:11.384583 #5783]  INFO -- : Processing by RegistrationsController#create as HTML
+I, [2014-09-21T03:20:11.405069 #5783]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"rMAE6+eXUXeu4BCxQ3+J7ratdLdq+YeTQgM7gz1uGRY=", "user"=>{"name"=>"Aji Achmad Mustofa", "phone"=>"085715630303", "address"=>"Jakarta Timur", "current_job"=>"Developer", "email"=>"micro280991@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "security_code"=>"191014280991"}, "commit"=>"Sign up"}
+D, [2014-09-21T03:20:11.484987 #5783] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-09-21T03:20:11.511827 #5783] DEBUG -- :   [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'micro280991@gmail.com' LIMIT 1
+D, [2014-09-21T03:20:12.041580 #5783] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = 'b081b0c7de715225d5b94e6486982798def497d5d205088148cfe4e6c896985a' ORDER BY "users"."id" ASC LIMIT 1[0m
+E, [2014-09-21T03:20:12.086353 #5783] ERROR -- : Binary data inserted for `string` type on column `confirmation_token`
+E, [2014-09-21T03:20:12.086485 #5783] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+D, [2014-09-21T03:20:12.087291 #5783] DEBUG -- :   [1m[35mSQL (44.6ms)[0m  INSERT INTO "users" ("address", "confirmation_sent_at", "confirmation_token", "created_at", "current_job", "email", "encrypted_password", "name", "phone", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "Jakarta Timur"], ["confirmation_sent_at", Sat, 20 Sep 2014 20:20:12 UTC +00:00], ["confirmation_token", "b081b0c7de715225d5b94e6486982798def497d5d205088148cfe4e6c896985a"], ["created_at", Sat, 20 Sep 2014 20:20:11 UTC +00:00], ["current_job", "Developer"], ["email", "micro280991@gmail.com"], ["encrypted_password", "$2a$10$5Vd.f/ZgnApuzkSOHYOmd.DihzTl8VsrR83o6kCXUs1mezQDSqhHS"], ["name", "Aji Achmad Mustofa"], ["phone", "085715630303"], ["updated_at", Sat, 20 Sep 2014 20:20:11 UTC +00:00]]
+I, [2014-09-21T03:20:12.236451 #5783]  INFO -- :   Rendered users/mailer/confirmation_instructions.html.erb (1.3ms)
+I, [2014-09-21T03:20:24.839499 #5783]  INFO -- : 
+Sent mail to micro280991@gmail.com (12599.2ms)
+D, [2014-09-21T03:20:24.839648 #5783] DEBUG -- : Date: Sun, 21 Sep 2014 03:20:12 +0700
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: micro280991@gmail.com
+Message-ID: <541de17c4027b_16978161ebf4307f@ajis-mbp.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome micro280991@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://alphabob.info/users/confirmation?confirmation_token=GetPqVQX5ihYBYzn5tu-">Confirm my account</a></p>
+
+D, [2014-09-21T03:20:24.847011 #5783] DEBUG -- :   [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+I, [2014-09-21T03:20:24.856242 #5783]  INFO -- : Redirected to http://localhost:3000/
+I, [2014-09-21T03:20:24.856509 #5783]  INFO -- : Completed 302 Found in 13451ms (ActiveRecord: 51.7ms)
+I, [2014-09-21T03:20:24.864474 #5783]  INFO -- : Started GET "/" for 127.0.0.1 at 2014-09-21 03:20:24 +0700
+I, [2014-09-21T03:20:24.867359 #5783]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-09-21T03:20:24.868878 #5783]  INFO -- :   Rendered layouts/_messages.html.erb (0.1ms)
+I, [2014-09-21T03:20:24.869602 #5783]  INFO -- :   Rendered layouts/_navigation.html.erb (0.5ms)
+I, [2014-09-21T03:20:24.870694 #5783]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.1ms)
+I, [2014-09-21T03:20:24.871348 #5783]  INFO -- : Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-09-21T03:20:25.149197 #5783]  INFO -- : Started GET "/images/sprites.png" for 127.0.0.1 at 2014-09-21 03:20:25 +0700
+F, [2014-09-21T03:20:25.150843 #5783] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/sprites.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2014-09-21T03:20:25.216337 #5783]  INFO -- : Started GET "/assets/timer.png" for 127.0.0.1 at 2014-09-21 03:20:25 +0700
+F, [2014-09-21T03:20:25.220849 #5783] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/timer.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
