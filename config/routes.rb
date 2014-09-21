@@ -1,5 +1,5 @@
 Myapp::Application.routes.draw do
-  devise_for :users, :controllers => { :registrations => "registrations",confirmations: 'confirmations',  }#, skip: :registrations
+  devise_for :users, :controllers => { :registrations => "registrations"  }#, skip: :registrations
   # devise_scope :user do
   # resource :registration,
   #   only: [:new, :create, :edit, :update],
